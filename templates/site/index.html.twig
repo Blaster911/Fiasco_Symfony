@@ -1,5 +1,420 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	Hello World !
+	<header class="header">
+		<div class="topbar">
+			<div class="logo">
+				<a href="/index.html">Le Fiasco</a>
+			</div>
+			<nav class="menu">
+				<a href="/about.html" class="menu-item">A propos</a>
+				<a href="/menu.html" class="menu-item">Menu</a>
+				<a href="/recipes.html" class="menu-item">Recette</a>
+				<a href="/contact.html" class="menu-item">Contact</a>
+				<a href="/reserver.html" class="menu-item menu-button">Réserver</a>
+			</nav>
+		</div>
+		<div class="baseline">
+			<span class="baseline-welcome">Welcome</span>
+			<strong class="baseline-name">The Fiasco</strong>
+			<span class="baseline-slogan">spécialité méditerranéenne</span>
+		</div>
+	</header>
+	<section class="home-section">
+		<div class="container-small">
+			<div class="block block-left">
+				<div class="block-img">
+					<img src="img/burger.jpg" alt="">
+				</div>
+				<div class="block-body">
+					<h2 class="title">
+						<span>Discover</span>
+						our gastronomy</h2>
+					<p>
+						Attending a trade show can be a very effective method of promoting your company and its products. And one of the most effective ways to optimize your trade show display and increase traffic to your booth is through the use of banner stands.
+					</p>
+					<div class="more">
+						<a href="recipe.html">See more</a>
+					</div>
+				</div>
+			</div>
+			<div class="block block-right">
+				<div class="block-img">
+					<img src="img/crusted-chicken.jpg" alt="">
+				</div>
+				<div class="block-body">
+					<h2 class="title">
+						<span>Discover</span>
+						our gastronomy</h2>
+					<p>
+						Attending a trade show can be a very effective method of promoting your company and its products. And one of the most effective ways to optimize your trade show display and increase traffic to your booth is through the use of banner stands.
+					</p>
+					<div class="more">
+						<a href="recipe.html">See more</a>
+					</div>
+				</div>
+			</div>
+			<div class="block block-centered block-last">
+				<div class="block-body">
+					<h2 class="title">
+						<span>Menu</span>
+						certified bio</h2>
+					<p>
+						Classified advertising is a form of advertising that is particularly common in newspapers and other periodicals. A classified is usually textually based and can consist of as little as the type of item being sold, and a contact number to call for more information
+					</p>
+				</div>
+			</div>
+			<nav class="ingredients-menu">
+				<a href="#" class="active">Eggs</a>
+				<a href="#">Porc</a>
+				<a href="#">Chicken</a>
+				<a href="#">Fish</a>
+				<a href="#">Vegan</a>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="menu-summary" id="menu">
+				<div class="menu-summary-item">
+					<img src="img/crusted-chicken-square.jpg" alt="" class="menu-summary-img">
+					<h3 class="menu-summary-title">Amazing Crusted Chicken</h3>
+					<p>Beryl Cook is one of Britain’s most talented and amusing artists .Beryl’s pictures feature women of all shapes and sizes enjoying themselves
+					</p>
+					<div class="menu-summary-price">$20</div>
+				</div>
+				<div class="menu-summary-item">
+					<img src="img/bobun-light-square.jpg" alt="" class="menu-summary-img">
+					<h3 class="menu-summary-title">BoBun Light Odd</h3>
+					<p>Beryl Cook is one of Britain’s most talented and amusing artists .Beryl’s pictures feature women of all shapes and sizes enjoying themselves
+					</p>
+					<div class="menu-summary-price">$20</div>
+				</div>
+				<div class="menu-summary-item">
+					<img src="img/poisson-square.jpg" alt="" class="menu-summary-img">
+					<h3 class="menu-summary-title">Amazing Crusted Chicken</h3>
+					<p>Beryl Cook is one of Britain’s most talented and amusing artists .Beryl’s pictures feature women of all shapes and sizes enjoying themselves
+					</p>
+					<div class="menu-summary-price">$20</div>
+				</div>
+				<div class="menu-summary-item">
+					<img src="img/paella-square.jpg" alt="" class="menu-summary-img">
+					<h3 class="menu-summary-title">Spicy Egg Paella</h3>
+					<p>Beryl Cook is one of Britain’s most talented and amusing artists .Beryl’s pictures feature women of all shapes and sizes enjoying themselves
+					</p>
+					<div class="menu-summary-price">$20</div>
+				</div>
+			</div>
+			<div class="block block-chief">
+				<div class="block-img">
+					<img src="img/chief.jpg" alt="">
+				</div>
+				<div class="block-body">
+					<h2 class="title">
+						<span>Chief</span>
+						MEET OUR EXECUTIVE CHEF, CHRISTIAN JACOB</h2>
+					<p>
+						If you are considering purchasing a new grill, or barbecue, you will be faced with a multitude of options to choose between. However, there is one choice which you will need to make fairly quickly in your quest for the perfect grill for you. That decision is whether to buy a charcoal or gas grill.
+					</p>
+					<p>
+						Wow I have a hankering for some really good grill roasted chicken, the melt in your mouth variety with some fresh homemade salsa slathered right on top.
+					</p>
+					<div class="more">
+						<a href="recipe.html">See more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="reservation" id="reservation">
+		<div class="container">
+			<div class="block block-centered block-last">
+				<div class="block-body">
+					<h2 class="title">
+						<span>Reservation</span>
+						Make reservation</h2>
+					<p>
+						Classified advertising is a form of advertising that is particularly common in newspapers and other periodicals. A classified is usually textually based and can consist.
+					</p>
+					<form action="#" class="reservation-form">
+						<div class="reservation-form-row">
+							<input type="text" name="fullname" placeholder="Full name">
+							<select name="persons">
+								<option value="1">For 1 person</option>
+								<option value="2">For 2 person</option>
+								<option value="3">For 3 person</option>
+								<option value="4">For 4 person</option>
+							</select>
+							<input type="date" name="date">
+						</div>
+						<button class="button">Reserve Table</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="recipes" id="recipes">
+		<div class="container">
+			<h2 class="title">
+				<span>Recipes</span>
+				WE SHARE OUR RECIPES WITH YOU
+			</h2>
+			<p>
+				If you are considering purchasing a new grill, or barbecue, you will be faced with a multitude of options to choose between. However, there is one choice which you will need.
+			</p>
+			<div class="recipes-list">
+				<div class="recipes-list-item">
+					<div class="recipes-date">
+						<strong>29</strong>
+						SEP
+					</div>
+					<p>
+						<a href="recipe1.html">
+							Chopped, sliced or wedged, hard-cooked eggs are the basis of egg salad and add protein and a happy glow to tossed and composed salads and casseroles.
+						</a>
+					</p>
+				</div>
+				<div class="recipes-list-item">
+					<div class="recipes-date">
+						<strong>29</strong>
+						SEP
+					</div>
+					<p>
+						Chopped, sliced or wedged, hard-cooked eggs are the basis of egg salad and add protein and a happy glow to tossed and composed salads and casseroles.
+					</p>
+				</div>
+				<div class="recipes-list-item">
+					<div class="recipes-date">
+						<strong>29</strong>
+						SEP
+					</div>
+					<p>
+						Chopped, sliced or wedged, hard-cooked eggs are the basis of egg salad and add protein and a happy glow to tossed and composed salads and casseroles.
+					</p>
+				</div>
+			</div>
+			<div class="more">
+				<a href="#">Go to our blog</a>
+			</div>
+		</div>
+	</section>
+	<div class="map" id="map"></div>
+
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer-columns">
+				<div class="footer-column">
+					<div class="footer-title">The fiasco</div>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorum, sint corporis nostrum, possimus unde eos vitae eius quasi saepe.
+					</p>
+				</div>
+				<div class="footer-column">
+					<div class="footer-title">Contact info</div>
+					<p>
+						1234 Altschul, New York, NY 10027-0000<br>
+						+1 987 654 3210<br>
+						<a href="mailto:contact@thefiasco.com">contact@thefiasco.com</a>
+					</p>
+				</div>
+				<div class="footer-column">
+					<div class="footer-title">Opening hours</div>
+					<ul>
+						<li>Monday to Friday | 10:00 AM - 11:00 PM</li>
+						<li>Monday to Friday | 10:00 AM - 11:00 PM</li>
+						<li>Monday to Friday | 10:00 AM - 11:00 PM</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-credits">
+				<span>2018 THE FIASCO</span>. All rights reserved.
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+	<script type="text/javascript">
+		// When the window has finished loading create our google map below
+google.maps.event.addDomListener(window, 'load', init);
+
+function init() {
+// Basic options for a simple Google Map
+// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+var mapOptions = { // How zoomed in you want the map to start at (always required)
+zoom: 11,
+
+// The latitude and longitude to center the map (always required)
+center: new google.maps.LatLng(43.598536, 3.896919),
+// New York
+
+// How you would like to style the map.
+// This is where you would paste any style found on Snazzy Maps.
+styles: [
+{
+"featureType": "water",
+"elementType": "geometry",
+"stylers": [
+{
+"color": "#e9e9e9"
+}, {
+"lightness": 17
+}
+]
+},
+{
+"featureType": "landscape",
+"elementType": "geometry",
+"stylers": [
+{
+"color": "#f5f5f5"
+}, {
+"lightness": 20
+}
+]
+},
+{
+"featureType": "road.highway",
+"elementType": "geometry.fill",
+"stylers": [
+{
+"color": "#ffffff"
+}, {
+"lightness": 17
+}
+]
+},
+{
+"featureType": "road.highway",
+"elementType": "geometry.stroke",
+"stylers": [
+{
+"color": "#ffffff"
+}, {
+"lightness": 29
+}, {
+"weight": 0.2
+}
+]
+}, {
+"featureType": "road.arterial",
+"elementType": "geometry",
+"stylers": [
+{
+"color": "#ffffff"
+}, {
+"lightness": 18
+}
+]
+}, {
+"featureType": "road.local",
+"elementType": "geometry",
+"stylers": [
+{
+"color": "#ffffff"
+}, {
+"lightness": 16
+}
+]
+}, {
+"featureType": "poi",
+"elementType": "geometry",
+"stylers": [
+{
+"color": "#f5f5f5"
+}, {
+"lightness": 21
+}
+]
+}, {
+"featureType": "poi.park",
+"elementType": "geometry",
+"stylers": [
+{
+"color": "#dedede"
+}, {
+"lightness": 21
+}
+]
+}, {
+"elementType": "labels.text.stroke",
+"stylers": [
+{
+"visibility": "on"
+}, {
+"color": "#ffffff"
+}, {
+"lightness": 16
+}
+]
+}, {
+"elementType": "labels.text.fill",
+"stylers": [
+{
+"saturation": 36
+}, {
+"color": "#333333"
+}, {
+"lightness": 40
+}
+]
+}, {
+"elementType": "labels.icon",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+}, {
+"featureType": "transit",
+"elementType": "geometry",
+"stylers": [
+{
+"color": "#f2f2f2"
+}, {
+"lightness": 19
+}
+]
+}, {
+"featureType": "administrative",
+"elementType": "geometry.fill",
+"stylers": [
+{
+"color": "#fefefe"
+}, {
+"lightness": 20
+}
+]
+}, {
+"featureType": "administrative",
+"elementType": "geometry.stroke",
+"stylers": [
+{
+"color": "#fefefe"
+}, {
+"lightness": 17
+}, {
+"weight": 1.2
+}
+]
+}
+]
+};
+
+// Get the HTML DOM element that will contain your map
+// We are using a div with id="map" seen below in the <body>
+var mapElement = document.getElementById('map');
+
+// Create the Google Map using our element and options defined above
+var map = new google.maps.Map(mapElement, mapOptions);
+
+// Let's also add a marker while we're at it
+var marker = new google.maps.Marker({
+position: new google.maps.LatLng(43.598536, 3.896919),
+map: map,
+title: 'The Fiasco'
+});
+}
+	</script>
 {% endblock %}
