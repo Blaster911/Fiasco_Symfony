@@ -8,10 +8,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class aboutController extends AbstractController
 {
     /**
-     * @Route("/about", name="about")
+     * @Route("/a-propos", name="a-propos")
      */
     public function show()
     {
-        return $this->render('site/pages/about.html.twig');
+        return $this->render('site/pages/about.html.twig', ['baseline' => ['baseLineWelcome' => '', 'baseLineName' => 'A propos de nous', 'baseLineSlogan' => '']]);
     }
 }

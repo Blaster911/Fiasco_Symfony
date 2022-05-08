@@ -8,7 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class recipeController extends AbstractController
 {
     /**
-     * @Route("/recipes", name="recipes")
+     * @Route("/recette", name="recette")
      */
     public function show()
     {
