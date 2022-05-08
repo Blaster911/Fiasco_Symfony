@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controller\pages;
 
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class mainController extends AbstractController
+class aboutController extends AbstractController
 {
     /**
-     * @Route("/home", name="home")
+     * @Route("/about", name="about")
      */
     public function show()
     {
-        return $this->render('site/index.html.twig');
+        return $this->render('site/pages/about.html.twig');
     }
 }
