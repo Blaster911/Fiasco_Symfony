@@ -10,8 +10,13 @@ class ReserverController extends AbstractController
     /**
      * @Route("/reserver", name="reserver")
      */
-    public function show()
+    public function index()
     {
-        return $this->render('site/_pages/reserver.html.twig', ['baseline' => ['baseLineWelcome' => 'reserver', 'baseLineName' => '', 'baseLineSlogan' => '']]);
+        $content = ['baseline' => [
+            'baseLineWelcome' => '',
+            'baseLineName' => 'reserver',
+            'baseLineSlogan' => ''
+        ]];
+        return $this->render('site/pages/reserver.html.twig', $content);
     }
 }

@@ -22,13 +22,13 @@
 	</head>
 	{% block body %}
 		<body>
-			{% include "site/_components/header.html.twig" %}
+			{% include "site/_partials/_header.html.twig" %}
 
 			{% block contentPage %}{% endblock %}
 
-			{% include "site/_components/footer.html.twig" %}
+			{% include "site/_partials/_footer.html.twig" %}
 
-			{% include "site/_components/script.html.twig" %}
+			{% include "site/_partials/_script.html.twig" %}
 
 		</body>
 	{% endblock %}

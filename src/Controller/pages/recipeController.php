@@ -10,8 +10,13 @@ class RecipeController extends AbstractController
     /**
      * @Route("/recette", name="recette")
      */
-    public function show()
+    public function index()
     {
-        return $this->render('site/_pages/recipe.html.twig', ['baseline' => ['baseLineWelcome' => 'Recette', 'baseLineName' => 'SALT CHICKEN', 'baseLineSlogan' => 'Facile à cuisiner | 10MIN DE PREPARATION']]);
+        $content = ['baseline' => [
+            'baseLineWelcome' => 'Recette',
+            'baseLineName' => 'SALT CHICKEN',
+            'baseLineSlogan' => 'Facile à cuisiner | 10MIN DE PREPARATION'
+        ]];
+        return $this->render('site/pages/recipe.html.twig', $content);
     }
 }
