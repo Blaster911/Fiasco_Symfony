@@ -12,6 +12,6 @@ class ContactController extends AbstractController
      */
     public function show()
     {
-        return $this->render('site/pages/contact.html.twig', ['baseline' => ['baseLineWelcome' => '', 'baseLineName' => 'Contact', 'baseLineSlogan' => '']]);
+        return $this->render('site/pages/_contact.html.twig', ['baseline' => ['baseLineWelcome' => '', 'baseLineName' => 'Contact', 'baseLineSlogan' => '']]);
     }
 }

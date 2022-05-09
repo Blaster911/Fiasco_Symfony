@@ -21,6 +21,6 @@ class MenuController extends AbstractController
                 'baseLineSlogan' => ''
             ]
         ];
-        return $this->render('site/pages/menu.html.twig', $content);
+        return $this->render('site/_pages/menu.html.twig', $content);
     }
 }

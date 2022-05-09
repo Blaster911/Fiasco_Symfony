@@ -12,6 +12,6 @@ class RecipeController extends AbstractController
      */
     public function show()
     {
-        return $this->render('site/pages/recipe.html.twig', ['baseline' => ['baseLineWelcome' => 'Recette', 'baseLineName' => 'SALT CHICKEN', 'baseLineSlogan' => 'Facile à cuisiner | 10MIN DE PREPARATION']]);
+        return $this->render('site/_pages/recipe.html.twig', ['baseline' => ['baseLineWelcome' => 'Recette', 'baseLineName' => 'SALT CHICKEN', 'baseLineSlogan' => 'Facile à cuisiner | 10MIN DE PREPARATION']]);
     }
 }

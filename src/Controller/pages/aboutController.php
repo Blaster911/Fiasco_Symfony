@@ -17,6 +17,6 @@ class AboutController extends AbstractController
             'baseLineName' => 'A propos de nous',
             'baseLineSlogan' => ''
         ]];
-        return $this->render('site/pages/about.html.twig', $content);
+        return $this->render('site/_pages/about.html.twig', $content);
     }
 }

@@ -12,6 +12,6 @@ class HomeController extends AbstractController
      */
     public function show()
     {
-        return $this->render('site/pages/home.html.twig', ['baseline' => ['baseLineWelcome' => 'Bienvenue', 'baseLineName' => 'Le Fiasco', 'baseLineSlogan' => 'spécialité méditerranéenne']]);
+        return $this->render('site/_pages/home.html.twig', ['baseline' => ['baseLineWelcome' => 'Bienvenue', 'baseLineName' => 'Le Fiasco', 'baseLineSlogan' => 'spécialité méditerranéenne']]);
     }
 }

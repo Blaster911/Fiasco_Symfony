@@ -12,6 +12,6 @@ class ReserverController extends AbstractController
      */
     public function show()
     {
-        return $this->render('site/pages/reserver.html.twig', ['baseline' => ['baseLineWelcome' => 'reserver', 'baseLineName' => '', 'baseLineSlogan' => '']]);
+        return $this->render('site/_pages/reserver.html.twig', ['baseline' => ['baseLineWelcome' => 'reserver', 'baseLineName' => '', 'baseLineSlogan' => '']]);
     }
 }
