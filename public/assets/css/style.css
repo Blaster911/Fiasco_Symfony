@@ -29,7 +29,7 @@ img {
 .header {
     background:
         linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)),
-        url(/img/eggs.jpg) center center / cover no-repeat;
+        url(../img/eggs.jpg) center center / cover no-repeat;
     color: #FFF;
 }
 
@@ -156,7 +156,7 @@ img {
     width: 5px;
     height: 9px;
     margin-left: .7em;
-    background: url(/img/arrow-right.svg) center center no-repeat;
+    background: url(../img/arrow-right.svg) center center no-repeat;
     transition: transform .3s;
 }
 
@@ -260,7 +260,7 @@ img {
 .reservation {
     background:
         linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(28, 28, 28, 0.4)),
-        url(/img/reservation.jpg) center center / cover no-repeat;
+        url(../img/reservation.jpg) center center / cover no-repeat;
     color: rgba(255, 255, 255, 0.6);
     padding: 50px 0;
 }
@@ -289,7 +289,7 @@ img {
 }
 
 .reservation select {
-    background: no-repeat right 0.5rem center url(/img/select.svg);
+    background: no-repeat right 0.5rem center url(../img/select.svg);
 }
 
 .reservation input:focus,
@@ -336,7 +336,7 @@ select option {
 
 .recipes {
     padding: 50px 0;
-    background: no-repeat top left / 80vw auto url(/img/news-bg.jpg);
+    background: no-repeat top left / 80vw auto url(../img/news-bg.jpg);
 }
 
 .recipes .more {
@@ -461,7 +461,7 @@ select option {
 
 .block-video::after {
     content: '';
-    background: url(/img/play.png) center center no-repeat;
+    background: url(../img/play.png) center center no-repeat;
     position: absolute;
     width: 62px;
     height: 62px;
@@ -645,8 +645,8 @@ body {
 
     .home-section {
         background:
-            fixed top 95px right 0px url(/img/oranges.jpg) no-repeat,
-            fixed top 640px left 0px url(/img/spices.jpg) no-repeat;
+            fixed top 95px right 0px url(../img/oranges.jpg) no-repeat,
+            fixed top 640px left 0px url(../img/spices.jpg) no-repeat;
     }
 
     .ingredients-menu a {
@@ -789,7 +789,7 @@ body {
     }
 
     .footer {
-        background-image: url(/img/splash.png);
+        background-image: url(../img/splash.png);
     }
 
     .footer-columns {

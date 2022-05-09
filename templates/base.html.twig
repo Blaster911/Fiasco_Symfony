@@ -9,8 +9,14 @@
 				Le Fiasco
 			{% endblock %}
 		</title>
-		<link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css">
+		{% block stylesheets %}
+			<link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+			<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+		{% endblock %}
+
+		{% block javascripts %}{% endblock %}
+
+
 	</head>
 	{% block body %}
 		<body>

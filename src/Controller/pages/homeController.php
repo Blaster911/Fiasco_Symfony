@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Controller\pages;
+namespace App\Controller\Pages;
 
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class homeController extends AbstractController
+class HomeController extends AbstractController
 {
     /**
      * @Route("/accueil", name="accueil")

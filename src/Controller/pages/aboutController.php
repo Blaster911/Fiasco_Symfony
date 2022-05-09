@@ -1,17 +1,22 @@
 <?php
 
-namespace App\Controller\pages;
+namespace App\Controller\Pages;
 
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class aboutController extends AbstractController
+class AboutController extends AbstractController
 {
     /**
      * @Route("/a-propos", name="a-propos")
      */
     public function show()
     {
-        return $this->render('site/pages/about.html.twig', ['baseline' => ['baseLineWelcome' => '', 'baseLineName' => 'A propos de nous', 'baseLineSlogan' => '']]);
+        $content = ['baseline' => [
+            'baseLineWelcome' => '',
+            'baseLineName' => 'A propos de nous',
+            'baseLineSlogan' => ''
+        ]];
+        return $this->render('site/pages/about.html.twig', $content);
     }
 }

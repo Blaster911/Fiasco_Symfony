@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Controller\pages;
+namespace App\Controller\Pages;
 
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class reserverController extends AbstractController
+class ReserverController extends AbstractController
 {
     /**
      * @Route("/reserver", name="reserver")

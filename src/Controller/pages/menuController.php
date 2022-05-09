@@ -1,17 +1,26 @@
 <?php
 
-namespace App\Controller\pages;
+namespace App\Controller\Pages;
 
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class menuController extends AbstractController
+class MenuController extends AbstractController
 {
+
     /**
-     * @Route("/menu", name="menu")
+     * @Route("/menu" , name="menu")
      */
     public function show()
     {
-        return $this->render('site/pages/menu.html.twig', ['baseline' => ['baseLineWelcome' => '', 'baseLineName' => 'Menu', 'baseLineSlogan' => '']]);
+        $content = [
+            'baseline' =>
+            [
+                'baseLineWelcome' => '',
+                'baseLineName' => 'Menu',
+                'baseLineSlogan' => ''
+            ]
+        ];
+        return $this->render('site/pages/menu.html.twig', $content);
     }
 }
