@@ -4,13 +4,14 @@ namespace App\Controller\Pages;
 
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
 
 class RecipeController extends AbstractController
 {
     /**
      * @Route("/recette", name="recette")
      */
-    public function index()
+    public function index(): Response
     {
         $content = ['baseline' => [
             'baseLineWelcome' => 'Recette',

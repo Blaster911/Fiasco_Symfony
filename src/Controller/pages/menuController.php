@@ -4,6 +4,7 @@ namespace App\Controller\Pages;
 
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
 
 class MenuController extends AbstractController
 {
@@ -11,7 +12,7 @@ class MenuController extends AbstractController
     /**
      * @Route("/menu" , name="menu")
      */
-    public function index()
+    public function index(): Response
     {
         $content = [
             'baseline' =>

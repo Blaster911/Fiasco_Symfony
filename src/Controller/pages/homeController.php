@@ -11,7 +11,7 @@ class HomeController extends AbstractController
     /**
      * @Route("/", name="accueil")
      */
-    public function index()
+    public function index(): Response
     {
         $content = ['baseline' => [
             'baseLineWelcome' => 'Bienvenue',
