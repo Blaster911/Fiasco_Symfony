@@ -31,10 +31,21 @@
 		</div>
 		<div class="container">
 			<form method="post" class="form-login">
-				<h1>Inscription</h1>
+				<div class="form-content">
+					<fieldset>
+						<legend>Mon identité</legend>
+						{{ form_row(registrationForm.lastname) }}
+						{{ form_row(registrationForm.firstname) }}
+						{{ form_row(registrationForm.email) }}
+					</fieldset>
+					<fieldset>
+						<legend>Mes coordonnées</legend>
+						{{ form_row(registrationForm.adress) }}
+						{{ form_row(registrationForm.zipcode) }}
+						{{ form_row(registrationForm.city) }}
+					</fieldset>
 
-				{{ form_start(registrationForm) }}
-				{{ form_row(registrationForm.email) }}
+				</div>
 				{{ form_row(registrationForm.plainPassword, {
             label: 'Password'
         }) }}
@@ -42,6 +53,7 @@
 
 				<button type="submit" class="btn">s'inscrire</button>
 				{{ form_end(registrationForm) }}
+
 			</form>
 		</div>
 	</header>
