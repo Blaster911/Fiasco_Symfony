@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	- inscription
+{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('assets/css/login.css') }}">
+{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block contentPage %}
+	<header id="header-login" class="header">
+		<div class="topbar">
+			<div class="logo">
+				<a href="/">Le Fiasco</a>
+			</div>
+			<nav class="menu">
+				<a href="/a-propos" class="menu-item">à propos</a>
+				<a href="/menu" class="menu-item">Menu</a>
+				<a href="/recette" class="menu-item">Recette</a>
+				<a href="/contact" class="menu-item">Contact</a>
+				<a href="/reserver" class="menu-item menu-button">Réserver</a>
+			</nav>
+		</div>
+		<div class="baseline">
+			<span class="baseline-welcome">{{baseline.baseLineWelcome}}</span>
+			<strong class="baseline-name">{{baseline.baseLineName}}</strong>
+			<span class="baseline-slogan">{{baseline.baseLineSlogan}}</span>
+		</div>
+		<div class="container">
+			<form method="post" class="form-login">
+				<h1>Inscription</h1>
+
+				{{ form_start(registrationForm) }}
+				{{ form_row(registrationForm.email) }}
+				{{ form_row(registrationForm.plainPassword, {
+            label: 'Password'
+        }) }}
+				{{ form_row(registrationForm.RGPDConsent) }}
+
+				<button type="submit" class="btn">s'inscrire</button>
+				{{ form_end(registrationForm) }}
+			</form>
+		</div>
+	</header>
+{% endblock %}
+
+{% block footer %}{% endblock %}

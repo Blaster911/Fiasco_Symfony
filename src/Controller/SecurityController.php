@@ -28,7 +28,7 @@ class SecurityController extends AbstractController
             'baseline' => [
                 'baseLineWelcome' => 'Se connecter ?',
                 'baseLineName' => '',
-                'baseLineSlogan' => 'Pour pouvoir réservez connecter vous'
+                'baseLineSlogan' => 'Pour pouvoir réservez connectez-vous'
             ]
         ]);
     }
