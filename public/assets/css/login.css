@@ -1,0 +1,44 @@
+.header {
+    height: 100vh;
+    background: none !important;
+}
+
+
+.header::before {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+    filter: blur(8px);
+    background: linear-gradient(146deg, rgb(42 42 42 / 92%), rgb(0 0 0 / 50%) 39.24%, rgb(169 169 169 / 40%)), url(../img/eggs.jpg) center center / cover no-repeat;
+}
+
+body {
+    background-color: black !important;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    max-width: 450px;
+    height: 50px;
+    margin-top: 10px;
+    border: 3px solid #c1bfbc !important;
+}
+
+.form-login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 100px;
+}
+
+.btn-login {
+    background-color: #c89446 !important;
+    border-color: wheat !important;
+}
+
+.label-login {
+    font-size: 1.5em;
+}

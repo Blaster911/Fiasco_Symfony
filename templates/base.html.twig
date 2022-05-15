@@ -5,15 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>
-			{% block title %}
-				Le Fiasco
-			{% endblock %}
+			Le Fiasco
+			{% block title %}{% endblock %}
 		</title>
 		<!-- Feuilles de styles -->
 		{% block stylesheets %}{% endblock %}
 		<link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+		<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 		<link
-		rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 		<!-- Fichiers JS -->
 		{% block javascripts %}{% endblock %}
@@ -21,14 +21,20 @@
 	</head>
 	{% block body %}
 		<body>
-			{% include "site/_partials/_header.html.twig" %}
+			{% block header %}
+				{% include "site/_partials/_header.html.twig" %}
+			{% endblock %}
+
 
 			{% block contentPage %}{% endblock %}
 
-			{% include "site/_partials/_footer.html.twig" %}
+			{% block footer %}
+				{% include "site/_partials/_footer.html.twig" %}
+			{% endblock %}
 
+			<!-- Script -->
 			{% include "site/_partials/_script.html.twig" %}
-
+			{% block JS %}{% endblock %}
 		</body>
 	{% endblock %}
 </html>
