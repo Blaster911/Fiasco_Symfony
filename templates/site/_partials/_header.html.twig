@@ -4,11 +4,20 @@
 			<a href="/">Le Fiasco</a>
 		</div>
 		<nav class="menu">
-			<a href="/a-propos" class="menu-item">à propos</a>
-			<a href="/menu" class="menu-item">Menu</a>
-			<a href="/recette" class="menu-item">Recette</a>
-			<a href="/contact" class="menu-item">Contact</a>
-			<a href="/connexion" class="menu-item menu-button">Réserver</a>
+			<a href="{{ path('a-propos') }}" class="menu-item">à propos</a>
+			<a href="{{ path('menu') }}" class="menu-item">Menu</a>
+			<a href="{{ path('recette') }}" class="menu-item">Recette</a>
+			<a href="{{ path('contact') }}" class="menu-item">Contact</a>
+			{% if app.user %}
+				<a href="{{ path('account') }}" class="menu-item">Mon compte</a>
+			{% else %}
+				<a href="{{ path('app_login') }}" class="menu-item">Se connecter</a>
+			{% endif %}
+
+			<a href="{{ path('reserver') }}" class="menu-item menu-button">
+				Réserver
+				<i class="fas fa-book-open"></i>
+			</a>
 		</nav>
 	</div>
 	<div class="baseline">
