@@ -1,0 +1,35 @@
+/* BUTTON */
+
+.border-light-btn {
+    border: 1px solid #e9e9e9 !important;
+}
+
+.bg-recipe {
+    background: no-repeat bottom left / 100vw 100vh url(../img/news-bg.jpg);
+    background-attachment: fixed;
+}
+
+.position-inherit {
+    position: inherit;
+}
+
+.block-ingredients-z-index {
+    z-index: 1;
+}
+
+header {
+    position: relative;
+    z-index: 0;
+}
+
+
+@media only screen and (min-width: 800px) {
+
+    .block-ingredients span {
+        width: 50px !important;
+    }
+
+    .block-ingredients {
+        width: 370px !important;
+    }
+}

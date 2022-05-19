@@ -2,37 +2,101 @@
 {% block title %}
 	- mon compte
 {% endblock %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('assets/css/utils.css') }}">
+{% endblock %}
 {% block contentPage %}
-	<p>
-		Email:
-		{{ app.user.email }}
-	</p>
-	<p>
-		Nom:
-		{{ app.user.lastname }}
-	</p>
-	<p>
-		Prénom:
-		{{ app.user.firstname }}
-	</p>
-	<p>
-		adresse:
-		{{ app.user.adress }}
-	</p>
-	<p>
-		Code postal:
-		{{ app.user.zipcode }}
-	</p>
-	<p>
-		ville:
-		{{ app.user.city }}
-	</p>
-	<p>
-		compte crée le :
+	<section class="section-overflow bg-recipe position-inherit">
+		<div class="container-small">
+			<div class="block block-left">
+				<div class="block-ingredients block-ingredients-z-index ">
+					<ul>
+						<li>
+							<span>Nom</span>
+							{{ app.user.lastname }}</li>
+						<li>
+							<span>Prénom</span>
+							{{ app.user.firstname }}</li>
+						<li>
+							<span>Adresse</span>
+							{{ app.user.adress }}</li>
+						<li>
+							<span>Code postale</span>
+							{{ app.user.zipcode }}</li>
+						<li>
+							<span>Ville</span>
+							{{ app.user.city }}</li>
+						<li>
+							<span>Email</span>
+							{{ app.user.email }}</li>
+						<li>
+							<span>Crée le</span>
+							{{ app.user.CreatedAt|date("d/m/Y") }}</li>
+						<li class="d-flex justify-content-center">
+							<button class="btn btn-light border-light-btn">Modifier</button>
+						</li>
+					</ul>
+				</div>
+				<div class="block-body">
+					<h2 class="title">
+						<span>Mes informations personnelles</span>
+					</h2>
+					<p>
+						Vérifiez vos informations pour pouvoir utiliser nos services.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h2 class="title">
+				<span>Vos réservations</span>
+				La liste de vos réservation en cours et passer
+			</h2>
+			<p>
+				Si vous souhaitez annulé une réservation en cours veuillez noté qu'un délai de traitement de 24h sera appliquer pour confirmer sont annulation
+			</p>
+			<div class="recipes-list">
+				<div class="recipes-list-item">
+					<div class="recipes-date">
+						<strong>29</strong>
+						SEP
+					</div>
+					<p>
+						<a href="recipe1.html">
+							pour 4 personnes<i class="far fa-users"></i>
+						</a>
+					</p>
+				</div>
+				<div class="recipes-list-item">
+					<div class="recipes-date">
+						<strong>29</strong>
+						SEP
+					</div>
+					<p>
+						Hachés, tranchés ou en quartiers, les œufs cuits durs sont la base de la salade aux œufs et ajoutent des protéines et une lueur joyeuse aux salades et aux casseroles mélangées et composées.
+					</p>
+				</div>
+				<div class="recipes-list-item">
+					<div class="recipes-date">
+						<strong>29</strong>
+						SEP
+					</div>
+					<p>
+						Hachés, tranchés ou en quartiers, les œufs cuits durs sont la base de la salade aux œufs et ajoutent des protéines et une lueur joyeuse aux salades et aux casseroles mélangées et composées.
+					</p>
+				</div>
+			</div>
+			<div class="more">
+				<a href="#">Allez sur notre blog</a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="d-flex justify-content-center w-100">
+				<a href="{{ path('app_logout') }}">
+					<button class="btn btn-outline-danger mb-5">Me déconnecter</button>
+				</a>
+			</div>
+		</div>
+	</section>
 
-		{{ app.user.CreatedAt|date("d/m/Y") }}
-	</p>
-	<a href="{{ path('app_logout') }}">
-		Me déconnecté
-	</a>
 {% endblock %}

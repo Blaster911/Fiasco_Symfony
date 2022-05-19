@@ -22,13 +22,14 @@ class SecurityController extends AbstractController
         $error = $authenticationUtils->getLastAuthenticationError();
         // last username entered by the user
         $lastUsername = $authenticationUtils->getLastUsername();
+
         return $this->render('security/login.html.twig', [
             'last_username' => $lastUsername,
             'error' => $error,
             'baseline' => [
                 'baseLineWelcome' => 'Se connecter ?',
                 'baseLineName' => '',
-                'baseLineSlogan' => 'Pour pouvoir réservez connectez-vous'
+                'baseLineSlogan' => 'Pour pouvoir réserver connectez-vous'
             ]
         ]);
     }

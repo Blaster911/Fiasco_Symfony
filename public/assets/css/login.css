@@ -31,7 +31,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 0 0 100px;
+    padding: 0 0 10px;
 }
 
 .btn-login {
@@ -69,8 +69,24 @@ fieldset div {
     align-items: center;
 }
 
+.baseline {
+    padding: 0 !important;
+}
+
+form ul>li {
+    color: #ffa3a3;
+    text-shadow: 0 0 8px black;
+}
+
 @media only screen and (min-width: 600px) {
     .form-content {
         flex-direction: row;
+    }
+}
+
+
+@media only screen and (min-height: 750px) {
+    .baseline {
+        padding: 40px 0 100px !important;
     }
 }
