@@ -10,28 +10,68 @@
 		<div class="container-small">
 			<div class="block block-left">
 				<div class="block-ingredients block-ingredients-z-index ">
-					<ul>
+					<ul id="list-info-user" class="flex-column d-flex ">
 						<li>
 							<span>Nom</span>
-							{{ app.user.lastname }}</li>
+							<p>{{ app.user.lastname }}</p>
+						</li>
 						<li>
 							<span>Prénom</span>
-							{{ app.user.firstname }}</li>
+							<p>{{ app.user.firstname }}</p>
+						</li>
 						<li>
 							<span>Adresse</span>
-							{{ app.user.adress }}</li>
+							<p>{{ app.user.adress }}</p>
+						</li>
 						<li>
 							<span>Code postale</span>
-							{{ app.user.zipcode }}</li>
+							<p>{{ app.user.zipcode }}</p>
+						</li>
 						<li>
 							<span>Ville</span>
-							{{ app.user.city }}</li>
+							<p>{{ app.user.city }}</p>
+						</li>
 						<li>
 							<span>Email</span>
-							{{ app.user.email }}</li>
+							<p>{{ app.user.email }}</p>
+						</li>
 						<li>
 							<span>Crée le</span>
-							{{ app.user.CreatedAt|date("d/m/Y") }}</li>
+							<p>{{ app.user.CreatedAt|date("d/m/Y") }}</p>
+						</li>
+						<li class="d-flex justify-content-center">
+							<button id="btn-modified-info-user" class="btn btn-light border-light-btn">Modifier</button>
+						</li>
+					</ul>
+					<ul id="list-info-user-modified" class="flex-column d-none">
+						<li>
+							<span>Nom</span>
+							<input type="text" value="{{ app.user.lastname }}">
+						</li>
+						<li>
+							<span>Prénom</span>
+							<input type="text" value="{{ app.user.firstname }}">
+						</li>
+						<li>
+							<span>Adresse</span>
+							<input type="text" value="{{ app.user.adress }}">
+						</li>
+						<li>
+							<span>Code postale</span>
+							<input type="text" value="{{ app.user.zipcode }}">
+						</li>
+						<li>
+							<span>Ville</span>
+							<input type="text" value="{{ app.user.city }}">
+						</li>
+						<li>
+							<span>Email</span>
+							<input type="text" value="{{ app.user.email }}">
+						</li>
+						<li>
+							<span>Crée le</span>
+							<input type="text" value="{{ app.user.CreatedAt|date("d/m/Y") }}">
+						</li>
 						<li class="d-flex justify-content-center">
 							<button class="btn btn-light border-light-btn">Modifier</button>
 						</li>

@@ -22,11 +22,21 @@ header {
     z-index: 0;
 }
 
+#list-info-user-modified li {
+    display: flex;
+    padding: 14px 0 !important;
+}
+
+#list-info-user li {
+    display: flex;
+}
+
+
 
 @media only screen and (min-width: 800px) {
 
     .block-ingredients span {
-        width: 50px !important;
+        width: 100px !important;
     }
 
     .block-ingredients {
