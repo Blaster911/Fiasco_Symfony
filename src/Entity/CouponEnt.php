@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Traits\CreatedAtTrait;
 use App\Repository\CouponEntRepository;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -10,6 +11,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class CouponEnt
 {
+    use CreatedAtTrait;
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -47,10 +50,6 @@ class CouponEnt
      */
     private $is_valid;
 
-    /**
-     * @ORM\Column(type="datetime_immutable")
-     */
-    private $created_at;
 
     /**
      * @ORM\ManyToOne(targetEntity=CouponsTypes::class, inversedBy="couponEnts")
@@ -131,18 +130,6 @@ class CouponEnt
     public function setIsValid(bool $is_valid): self
     {
         $this->is_valid = $is_valid;
-
-        return $this;
-    }
-
-    public function getCreatedAt(): ?\DateTimeImmutable
-    {
-        return $this->created_at;
-    }
-
-    public function setCreatedAt(\DateTimeImmutable $created_at): self
-    {
-        $this->created_at = $created_at;
 
         return $this;
     }
