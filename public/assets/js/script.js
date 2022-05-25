@@ -8,13 +8,13 @@ function isEmpty(str) {
 // account
 // Modified info
 
-
 const btnModifiedInfo = document.getElementById('btn-modified-info-user');
 
-btnModifiedInfo.addEventListener("click", () => {
-    const listInfoElt = document.getElementById('list-info-user');
-    const listInfoModifiedElt = document.getElementById('list-info-user-modified');
-    if (Boolean(listInfoElt.classList.length)) {
+if (Boolean(btnModifiedInfo)) {
+    btnModifiedInfo.addEventListener("click", () => {
+        const listInfoElt = document.getElementById('list-info-user');
+        const listInfoModifiedElt = document.getElementById('list-info-user-modified');
+
         listInfoElt.classList.forEach(element => {
             if (element == "d-flex") {
                 listInfoModifiedElt.classList.add("d-flex");
@@ -28,7 +28,8 @@ btnModifiedInfo.addEventListener("click", () => {
                 listInfoElt.classList.add("d-flex");
                 listInfoElt.classList.remove("d-none");
             }
-            console.log(element);
         });
-    }
-})
+
+    })
+}
+

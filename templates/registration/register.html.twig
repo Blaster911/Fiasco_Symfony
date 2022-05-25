@@ -45,8 +45,14 @@
 						{{ form_row(registrationForm.city) }}
 					</fieldset>
 				</div>
-				<div>
-					{{ form_row(registrationForm.plainPassword) }}
+				<div class="form-content">
+					<fieldset class="d-flex justify-content-center w-100">
+						<legend>Mon mot de passe</legend>
+						{{ form_row(registrationForm.plainPassword.children.first) }}
+					</fieldset>
+					<fieldset class="d-flex justify-content-center w-100">
+						{{ form_row(registrationForm.plainPassword.children.second) }}
+					</fieldset>
 				</div>
 
 				{{ form_row(registrationForm.RGPDConsent) }}
