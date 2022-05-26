@@ -11,14 +11,14 @@ trait SlugTrait
      */
     private $slug;
 
-    public function getSlug(): ?\DateTimeImmutable
+    public function getSlug(): ?string
     {
-        return $this->created_at;
+        return $this->slug;
     }
 
-    public function setSlug(\DateTimeImmutable $created_at): self
+    public function setSlug(string $slug): self
     {
-        $this->created_at = $created_at;
+        $this->slug = $slug;
 
         return $this;
     }

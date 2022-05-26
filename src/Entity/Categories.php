@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Traits\SlugTrait;
 use App\Repository\CategoriesRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -12,6 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Categories
 {
+    use SlugTrait;
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -26,6 +28,7 @@ class Categories
 
     /**
      * @ORM\ManyToOne(targetEntity=Categories::class, inversedBy="categories")
+     * @ORM\JoinColumn(onDelete="CASCADE")
      */
     private $parent;
 
